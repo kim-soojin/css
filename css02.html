@@ -7,15 +7,37 @@
   </head>
   <body>
     <style>
-      .box1 {
+      /* .box1:hover {
+        background-color: blanchedalmond;
+        width: 250px;
+      } */
+
+      .box1,
+      .box2 {
         border: 1px solid red;
         width: 200px;
         padding: 20px;
       }
-      .box1:hover {
-        background-color: blanchedalmond;
+
+      .box2 {
+        display: block;
+      }
+
+      .box2:focus {
+        border-width: 5px;
+      }
+
+      .box1:focus {
+        border-width: 5px;
+      }
+
+      .box3 {
+        display: flex;
       }
     </style>
     <div class="box1">여기에 마우스를 올려보시오</div>
+    <a href="#" class="box2">링크요소다</a>
+    <input class="box3" type="text" />
+    <input class="box3" type="text" />
   </body>
 </html>
