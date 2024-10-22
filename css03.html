@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .box1 {
+        border: 1px solid red;
+      }
+      .box1 > * {
+        border: 1px solid lightblue;
+      }
+      /* .box1 > div:first-child {
+        border: 5px solid lightgreen;
+      } */
+      .box1 > div:first-of-type {
+        border: 5px solid lightgreen;
+      }
+
+      .box1 > div:last-of-type {
+        border: 5px solid rgb(238, 144, 183);
+      }
+
+      .box1 > p:nth-of-type(3) {
+        border: 5px solid rgb(121, 113, 116);
+      }
+    </style>
+    <section class="box1">
+      <p>0</p>
+      <div>1 <strong>1_1</strong></div>
+      <div>2</div>
+      <p>3</p>
+      <span>4</span>
+      <div>5</div>
+      <p>6</p>
+    </section>
+
+    <style>
+      .box2 li:nth-of-type(2n + 1) {
+        border: 1px solid lightgray;
+      }
+    </style>
+    <ul class="box2">
+      <li>test1</li>
+      <li>test2</li>
+      <li>test3</li>
+      <li>test4</li>
+      <li>test5</li>
+      <li>test6</li>
+      <li>test7</li>
+      <li>test8</li>
+    </ul>
+
+    <style>
+      .box3 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid red;
+      }
+      .box3::before,
+      .box3::after {
+        border: 1px solid lightgreen;
+        width: 150px;
+        display: inline-block;
+      }
+      .box3::before {
+        content: "이전영역";
+      }
+
+      .box3::after {
+        content: "다음영역";
+      }
+    </style>
+    <div class="box3">박스영역</div>
+  </body>
+</html>

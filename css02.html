@@ -19,12 +19,19 @@
         padding: 20px;
       }
 
-      .box2 {
+      a.box2 {
         display: block;
+        outline: none;
+        color: black;
+        text-decoration: none;
       }
 
-      .box2:focus {
+      a.box2:focus {
         border-width: 5px;
+      }
+
+      a.box2:visited {
+        color: blueviolet;
       }
 
       .box1:focus {
@@ -33,11 +40,25 @@
 
       .box3 {
         display: flex;
+        outline: none;
+        border: none;
+      }
+
+      .box3:hover,
+      .box3:focus {
+        background-color: beige;
+      }
+      #testLink {
+        background-color: lightcoral;
+        height: 50vh;
       }
     </style>
     <div class="box1">여기에 마우스를 올려보시오</div>
-    <a href="#" class="box2">링크요소다</a>
+    <a href="#testLink" class="box2">링크요소다</a>
     <input class="box3" type="text" />
     <input class="box3" type="text" />
+    <hr style="height: 50vh" />
+    <div id="testLink">아래쪽</div>
+    <hr style="height: 50vh" />
   </body>
 </html>
