@@ -57,23 +57,28 @@
     <style>
       .box3 {
         width: 300px;
-        height: 100px;
         border: 1px solid red;
+      }
+      .box3 span {
+        font-weight: bold;
       }
       .box3::before,
       .box3::after {
         border: 1px solid lightgreen;
         width: 150px;
-        display: inline-block;
+        height: 50px;
+        display: block;
       }
       .box3::before {
-        content: "이전영역";
+        content: "이전";
+        background-color: lightcoral;
       }
 
       .box3::after {
-        content: "다음영역";
+        content: "다음";
+        background-color: lightblue;
       }
     </style>
-    <div class="box3">박스영역</div>
+    <div class="box3"><span>박스영역</span></div>
   </body>
 </html>
