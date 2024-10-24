@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <!-- /* 
+  px
+  % 부모를 기준으로 한 단위
+  vw / vh
+  em 상속된 폰트 사이즈의 배수
+  rem root 지정된 폰트 사이즈의 배수
+  폰트 사이즈 설정 안 했다면  기본값은 16px
+   */ -->
   <body>
     <style>
-      /* 
-      px
-      % 부모를 기준으로 한 단위
-      vw / vh
-       */
       .box1 {
         border: 1px solid red;
         /* 적용할 수 있는 최소 사이즈 */
         /* min-width: 600px; */
         /* width: calc((100% - 64px) / 2); */
-        width: 100vw;
+        width: 100vh;
         max-width: 1400px;
         height: 100%;
         /* 적용할 수 있는 최대 사이즈 */
@@ -31,9 +34,24 @@
         width: 50%;
       }
     </style>
-    <header class="box1">
+    <!-- <header class="box1">
       <p>박스1_1</p>
       <div>박스1_2</div>
-    </header>
+    </header> -->
   </body>
+  <style>
+    :root {
+      font-size: 20px;
+      --size: 20px;
+    }
+    .box2 {
+      /* font-size: 1rem; */
+      font-size: var(--size);
+      border: 1px solid red;
+      /* width: 150px; */
+      width: 10em;
+    }
+  </style>
+  test
+  <div class="box2">박스</div>
 </html>
