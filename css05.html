@@ -51,10 +51,14 @@
       }
       .box2 {
         border: 1px solid red;
-        width: 100px;
+        width: 400px;
         height: 100px;
-        margin: 10px;
-        padding: 10px;
+        margin: 10px 20px 30px 40px;
+        padding: 10px 20px 30px 40px;
+      }
+      .box2 {
+        padding-top: 50px;
+        margin-top: 50px;
       }
       /* .box2 p {
         border: 1px solid blue;
@@ -65,7 +69,25 @@
     <div class="box2">
       <p>test</p>
     </div>
-    <ul>
+    <style>
+      .box3 {
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .box3 li {
+        border: 1px solid lightblue;
+        /* border-width: 1px;
+          border-style: solid;
+          border-color: lightblue; 의 속기형*/
+        margin: 5px 5px 10px;
+        /* 마진은 붙어있을 때 사이즈가 큰 쪽으로 병합됨! */
+        text-align: center;
+      }
+      .box3 li:hover {
+        border-top-color: red;
+      }
+    </style>
+    <ul class="box3">
       <li>test</li>
       <li>test</li>
       <li>test</li>
