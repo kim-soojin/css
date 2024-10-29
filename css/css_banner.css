@@ -1,0 +1,42 @@
+body {
+  background-color: beige;
+}
+
+.banner {
+  display: block;
+  background-color: blueviolet;
+  width: calc(70% - 32px);
+  height: 150px;
+  margin: 100px auto;
+  border-radius: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 32px;
+  position: relative;
+}
+
+banner. > * {
+  display: block;
+}
+
+.banner img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner i {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.banner:hover {
+  top: -10px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 1);
+}
+
+.banner:hover i {
+  left: 50px;
+}
